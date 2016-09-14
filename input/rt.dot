@@ -1,0 +1,22 @@
+// vh 0
+// v1 3
+// v2 3
+// v3 3
+// v4 3
+// v5 7
+// v6 7
+// v7 7
+
+digraph rt {
+vh -> v1  [label = "1"];
+v1 -> v2  [label = "1"];                                                                                          
+v1 -> v7  [label = "0"];
+v2 -> v3  [label = "1"];
+v2 -> v6  [label = "0"];
+v3 -> v4  [label = "1"];
+v3 -> v5  [label = "0"];
+v4 -> v5  [label = "0"];
+v5 -> v6  [label = "0"];
+v6 -> v7  [label = "0"];
+v7 -> vh  [label = "0"];
+}
