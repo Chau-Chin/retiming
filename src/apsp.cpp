@@ -4,13 +4,9 @@
 #include <cstdlib>
 #include <limits>
 
-#ifdef Prof
-  #include <google/profiler.h>
-#endif
-
 using namespace std;
 
-typedef vector< vector<double> > vec2D;
+typedef vector< vector<doublew> > vec2D;
 #define MAX_DOUBLE numeric_limits<double>::max()/10
 
 struct Graph

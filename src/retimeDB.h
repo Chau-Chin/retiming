@@ -50,8 +50,10 @@ class RetimeDB
 
 	void init_from_dot( const string &inName );
 	void compute_W_D();
-
+    
   private:
+    Edge &get_e( const size_t &i )   { return es[ i ]; }
+    Vertex &get_v( const size_t &i ) { return vs[ i ]; }
 
   	// Directed Graph for min-delay retiming
 	Edges 		es;

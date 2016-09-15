@@ -9,6 +9,7 @@ int main( int argc, char **argv )
 
     retime::RetimeDB rt;
 	rt.init_from_dot( argv[1] );
+    rt.compute_W_D();
 
     return 0;
 }
