@@ -7,6 +7,7 @@
 #include <iostream> // cout, ostream
 #include <fstream> // ifstream
 #include <vector>
+#include <map>
 #include <sstream> // stringstream
 #include <string>
 #include <sys/resource.h>

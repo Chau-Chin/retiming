@@ -3,12 +3,12 @@ OBJDIR = bin/objs
 SRCDIR = src
 
 CFLAG = -O2 -static -fopenmp 
-OBJECTS = main.o
+OBJECTS = $(OBJDIR)/retimeDB.o $(OBJDIR)/main.o 
 
 all: $(TARGET)
 
-$(TARGET): $(OBJDIR)/$(OBJECTS)
-	g++ -o $@ $(OBJDIR)/$(OBJECTS) 
+$(TARGET): $(OBJECTS)
+	g++ -o $@ $(OBJECTS) 
 
 .PHONY: clean
 
