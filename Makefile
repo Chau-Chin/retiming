@@ -2,7 +2,7 @@ TARGET = bin/rt
 OBJDIR = bin/objs
 SRCDIR = src
 
-CFLAG = -O2 -static -fopenmp 
+CFLAG = -O2 -static -fopenmp
 OBJECTS = $(OBJDIR)/retimeDB.o $(OBJDIR)/main.o 
 
 all: $(TARGET)
