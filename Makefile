@@ -13,7 +13,7 @@ $(TARGET): $(OBJECTS)
 .PHONY: clean
 
 clean:
-	@rm -rf $(OBJDIR)/* $(TARGET)
+	@rm -rf $(OBJDIR)/*.o $(TARGET)
 
 $(OBJDIR)/%.o : $(SRCDIR)/%.cpp
 	g++ $(CFLAG) -c $< -o $@
